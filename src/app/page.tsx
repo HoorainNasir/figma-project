@@ -1,101 +1,159 @@
 import Image from "next/image";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      <Navbar />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      <div className="parentContainer">
+        <div className="textContainer">
+          <p>PROJECT</p>
+          <p id="bold-text">Lorum</p>
+
+          <div id="frame">
+            <Image src={"/Frame9.png"} alt="frame" width={52.95} height={53} />
+            <Image src={"/Frame8.png"} alt="frame" width={52.95} height={53} />
+          </div>
+          <div className="view1">
             <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src={"/slide-numbers.png"}
+              alt="slide numbber"
+              width={141.88}
+              height={52}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+
+        <div className="imgContainer">
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src={"/rectangle6.png"}
+            alt="project-showcase"
+            width={770}
+            height={829}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          <button className="view1">
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            src={"/Frame10.png"}
+            alt="view project"
+            width={221.81}
+            height={71}
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          </button>
+        </div>
+      </div>
+      <div className="parentContainer">
+        <div className="childContainer">
+
+          <div className="aboutContainer">
+            <Image src={"/img8.png"} alt="about" width={270} height={265} className="about-con-image w-12 h-10"/>
+            <Image src={"/img10.png"} alt="about" width={270} height={140} className="about-con-image w-12 h-10"/>
+          </div>
+
+          <div className="aboutContainer2">
+            <Image src={"/img9.png"} alt="about" width={270} height={345} className="about-con-image2 w-96 h-16 mt-2"/>
+          </div>
+
+          <div className="about-text">
+            <h1 className="light-text">About</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          </div>
+        </div>
+
+        <div className="mission">
+            <h1 className="light-text">Main Focus/Mission Statement</h1>
+
+            <div className="mission-goal">
+              <div className="goalset">
+                <h1 className="black-text">1</h1>
+                <p className="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat.</p>
+              </div>
+              <div className="goalset">
+                <h1 className="black-text">2</h1>
+                <p className="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat, magna mauris porttitor tortor, a auctor est felis ut nisl.</p>
+              </div>
+            </div>
+
+        </div>
+
+        <div className="projects">
+          <h1 className="light-text">Our Projects</h1>
+
+          <div className="pt-8 flex content-center">
+            <button id="sample-preview">
+              <div className="shadow">
+              <p>Sample</p>
+              <p>Project</p>
+              <Image src={"/group12.png"} width={129} height={24} alt="view more"/>
+              </div>
+            </button>
+
+            <div className="image">
+              <Image src={"/image15.png"} alt="project" width={570} height={255} className="sample-preview"/>
+            </div>
+          </div>
+          <div className="flex content-center">
+          <Image src={"/image16.png"} alt="project" width={270} height={255} className="sample2"/>
+          <Image src={"/image17.png"} alt="project" width={470} height={255} className="sample3"/>
+          <Image src={"/image18.png"} alt="project" width={370} height={255} className="sample2"/>
+          </div>
+
+          <div className="pt-4">
+            <button id="viewbtn">
+            <Image src={"/view-more.png"} width={222} height={71} alt="view more"/>
+            </button>
+          </div>
+        </div>
+
+        <div className="contact">
+        <h1 className="light-text">Contact Us</h1>
+          <div className="mt-8 flex">
+            <form >
+              <div className="form">
+              <label>
+                <input type="text" value={'Name'} name="name" maxLength={30} size={30} />
+              </label>
+              </div>
+              
+              <div className="form">
+              <label>
+                <input type="text" value={"Phone Number"} name="phone-number"  maxLength={30} size={30}/>
+              </label>
+              </div>
+
+              <div className="form">
+              <label>
+                <input type="email" value={"E-mail"} name="email" maxLength={30} size={30} />
+              </label>
+              </div>
+
+              <div className="form">
+              <label>
+                <input type="text" value={"Interest in"} name="interest" maxLength={50} size={30}/>
+              </label>
+              </div>
+
+              <div className="form ">
+                <label>
+                <textarea value={"Message"} name="message" rows={4} cols={32}></textarea>
+                </label>
+              </div>
+            </form>
+
+            <div className="ml-8">
+              <Image src={"/image12.png"} alt="contact-us" width={749} height={369}/>
+            </div>
+          </div>
+          <div className="mail-btn">
+          <button>
+          <Image src={"/email.png"} width={222} height={71} alt="send email"/>
+          </button>
+          </div>
+        </div>
+      </div>
+
+      <Footer/>
     </div>
   );
 }
